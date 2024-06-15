@@ -5,7 +5,7 @@ This project simulates a grid model using Model Predictive Control (MPC). The si
 ## Project Structure
 ```
 project/
-├── exp_ans        # # Directory where all experiment results are saved
+├── exp_ans              # Directory where all experiment results are saved
 ├── grid_model.py        # Contains the GridModel class for model construction and simulation
 ├── plotting.py          # Contains functions for plotting the simulation results
 ├── config.py            # Contains functions for loading and parsing configuration parameters
