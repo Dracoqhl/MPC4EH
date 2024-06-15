@@ -91,13 +91,13 @@ Example structure of parameters.json:
 
 The results of the simulation are saved in the specified savepath directory under a subdirectory named after the alias. The output includes:
 
-	1.	Plots of the simulation results:
+1.	Plots of the simulation results:
 ```
 alias_changing_variables.png: Plot of changing variables over time.
 alias_accumulated_variables.png: Plot of accumulated variables over time.
 alias_setpoints_vs_states.png: Plot comparing setpoints and state variables.
 ```
-	2.	A JSON file containing the parameters used for the simulation:
+2.	A JSON file containing the parameters used for the simulation:
 ```
 used_parameters.json
 ```
