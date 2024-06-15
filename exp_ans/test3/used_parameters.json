@@ -1,0 +1,54 @@
+{
+    "alias": "test3",
+    "savepath": "./exp_ans",
+    "paramfile": "parameters.json",
+    "symvar_type": "SX",
+    "M": 1.8,
+    "D": 0.15,
+    "T_ESS": 0.4,
+    "T_DG": 0.8,
+    "T_RES": 0.1,
+    "weights": {
+        "w_delta_f": 10,
+        "w_accumulated_delta_f": 20,
+        "w_ress": 1,
+        "w_ess": 1,
+        "w_dg": 1
+    },
+    "bounds": {
+        "delta_P_ESS_set": [
+            -2,
+            2
+        ],
+        "delta_P_DG_set": [
+            0,
+            3
+        ],
+        "delta_P_ESS": [
+            -2,
+            2
+        ],
+        "delta_P_DG": [
+            0,
+            3
+        ],
+        "delta_P_RES": [
+            -300,
+            300
+        ],
+        "delta_f": [
+            -2,
+            2
+        ],
+        "accumulated_delta_f": [
+            -0.1,
+            0.1
+        ]
+    },
+    "P_ESS_current": 0,
+    "P_DG_current": 1,
+    "P_DG_max": 3,
+    "P_DG_min": 0,
+    "P_ESS_max": 2,
+    "P_ESS_min": -2
+}
