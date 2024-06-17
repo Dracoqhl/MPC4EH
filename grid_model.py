@@ -11,6 +11,7 @@ class GridModel:
         self.data = pd.read_excel(self.data_path)
         self.delta_P_Load_data = self.data['delta_P_Load'].values
         self.delta_P_RES_data = self.data['delta_P_RES'].values
+        self.delta_P_RES_noisy = self.data['delta_P_RES_noisy'].values
         self.model = self.create_model()
         self.mpc = self.create_mpc(silence_solver)
         self.set_optimizer_constraints(self.mpc)
@@ -124,7 +125,7 @@ class GridModel:
         
         if idx < len(self.delta_P_Load_data):
             tvp_template['delta_P_Load'] = self.delta_P_Load_data[idx]
-            tvp_template['delta_P_RES_set'] = self.delta_P_RES_data[idx]
+            tvp_template['delta_P_RES_set'] = self.delta_P_RES_noisy[idx]
         return tvp_template
 
     # ESS DG 可调范围需要不断更新
